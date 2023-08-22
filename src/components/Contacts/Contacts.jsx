@@ -4,14 +4,15 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { ImMail4 } from 'react-icons/im';
 import { BsTelegram } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { ContactsList, ContainerContacts } from './Contacts.styled';
-import { Container } from 'components/Resume.styled';
+import { ContactsList } from './Contacts.styled';
+import { Container, Section } from 'components/Resume.styled';
 
 
 export const Contacts = () => {
   
   return (
-    <Container>
+    <Section>
+      <Container>
       <ContactsList
       style={{
       borderRadius: '10px', backgroundColor: '#F1F1F1', paddingTop: '20px',
@@ -31,7 +32,7 @@ export const Contacts = () => {
         </li>
         <li>
           <ImMail4 size='18'/>
-          <a href="mailto: salnikov.nkt@gmail.com">salnikov.nkt@gmail.com</a>
+          <a href="mailto: salnikov.nkt@gmail.com"> salnikov.nkt@gmail.com</a>
         </li>
         <li>
           <AiFillGithub size='18'/>
@@ -43,5 +44,6 @@ export const Contacts = () => {
         </li>
         </ContactsList>
       </Container>
+    </Section>
   )
 }

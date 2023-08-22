@@ -11,26 +11,24 @@ export const Container = styled.div`
     width: 375px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 704px;
     
     padding-left: 32px;
     padding-right: 32px;
   }
     @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1132px;
   }
 `;
 
 export const Section = styled.section`
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 32px;
+
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 16px;
-    padding-bottom: 32px;
+
   }
 `;

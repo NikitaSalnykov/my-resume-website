@@ -1,10 +1,10 @@
-import { Contacts } from 'components/Contacts/Contacts'
-import { Container } from 'components/Resume.styled'
+import { Container, Section } from 'components/Resume.styled'
 import React from 'react'
-import { CustomHeader, HeaderContainer, Photo, Bio } from './Header.styled'
+import { HeaderContainer, Photo, Bio } from './Header.styled'
 
 export const Header = () => {
   return (
+    <Section>
       <Container>
         <HeaderContainer>
         <Photo>
@@ -16,5 +16,6 @@ export const Header = () => {
         </Bio>
       </HeaderContainer>
       </Container>
+      </Section>
   )
 }

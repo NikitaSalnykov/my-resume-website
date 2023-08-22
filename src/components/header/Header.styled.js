@@ -5,8 +5,7 @@ export const CustomHeader = styled.header`
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
 
   @media screen and (min-width: 375px) {
   }
@@ -36,7 +35,6 @@ export const HeaderContainer = styled.div`
   background-color: #1E1E1E;
   color: white;
   border-radius: 20px;
-  margin-bottom: 20px;
 
   @media screen and (min-width: 375px) {
   padding-left: 20px;

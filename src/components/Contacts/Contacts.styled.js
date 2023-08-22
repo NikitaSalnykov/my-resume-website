@@ -5,12 +5,17 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
-gap: 20px 50px;
+gap: 20px 40px;
+
+flex-direction: column;
+
 
   @media screen and (min-width: 375px) {
 
   }
   @media screen and (min-width: 768px) {
+flex-direction: row;
+
 
   }
     @media screen and (min-width: 1200px) {
@@ -21,8 +26,18 @@ gap: 20px 50px;
     display: flex;
     align-items: center;
     justify-content: unset;
-    gap: 20px;
-    width: 210px;
-    
+    gap: 10px;
+
+  
+  @media screen and (min-width: 375px) {
+
+
   }
+  @media screen and (min-width: 768px) {
+
+  }
+    @media screen and (min-width: 1200px) {
+
+  }
+}
 `
