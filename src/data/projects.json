@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Simply Chocolate",
+    "type": "Team Project (Role: Team Lead & Developer)",
+    "technologies": ["HTML", "CSS", "JS", "Parcel"],
+    "page": "https://nikitasalnykov.github.io/team-1-chocolate-project/",
+    "repositorium": "https://github.com/NikitaSalnykov/team-1-chocolate-project",
+    "description": "A website with a responsive layout, modal windows, feedback, and order forms",
+    "img": "/img/popcorn.jpg"
+  },
+  {
+    "id": 2,
+    "title": "WebStudio",
+    "type": "Individual Project",
+    "technologies": ["HTML", "CSS", "JS", "Parcel"],
+    "page": "https://nikitasalnykov.github.io/goit-markup-hw-07/",
+    "repositorium": "https://github.com/NikitaSalnykov/goit-markup-hw-07",
+    "description": "A website with a responsive layout, a modal window, a contact form.",
+    "img": "/img/popcorn.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Bookshelf",
+    "type": "Team Project (Role: Team Lead & Developer)",
+    "technologies": ["HTML", "CSS", "JS", "REST API", "AXIOS", "Parcel"],
+    "page": "https://nikitasalnykov.github.io/bookshelf-project/",
+    "repositorium": "https://github.com/NikitaSalnykov/bookshelf-project",
+    "description": "Developed book purchasing application with Firebase authentication, REST API database integration, shopping cart functionality, and theme switcher.",
+    "img": "/img/popcorn.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Popcorn",
+    "type": "Pet-project",
+    "technologies": ["REACT", "Styled Component", "Material-UI", "JS", "REST API", "AXIOS", "Webpack"],
+    "page": "https://nikitasalnykov.github.io/goit-react-hw-05-movies/",
+    "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-05-movies",
+    "description": "Developed a React-based movie search website with Styled Components and Material-UI, featuring a vast movie library, intuitive search, ratings, reviews, and curated collections. Implemented responsive design for seamless user experience across devices. This project showcases my strong front-end skills and user-centered approach.",
+    "img": "/img/popcorn.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Images Founder",
+    "type": "Pet-project",
+    "technologies": ["REACT", "Styled Component", "JS", "REST API", "AXIOS", "Webpack"],
+    "page": "https://nikitasalnykov.github.io/goit-react-hw-04-images/",
+    "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-04-images",
+    "description": "Developed a responsive image search website utilizing REACT, Styled Components, JavaScript, REST API integration through AXIOS, and optimized with Webpack. The site offers a user-friendly interface for seamless image exploration.",
+    "img": "/img/popcorn.jpg"
+  }
+]

@@ -1,16 +1,15 @@
-import { Container, Section } from 'components/Resume.styled'
-import {  Delimiter, ExperienceDetails, ExperienceDuration, ExperienceItem } from 'components/WorkExperience/WorkExperience.styled'
+import { Container, Section, Title } from 'components/Resume.styled'
+import { ExperienceDetails, ExperienceDuration, ExperienceItem } from 'components/WorkExperience/WorkExperience.styled'
 import React from 'react'
-import { DelimiterVertical, EducationList } from './Education.styled'
+import { EducationList } from './Education.styled'
 
 export const Education = ({data}) => {
   return (
         <Section>
       <Container>
-        <h2>Education</h2>
+        <Title>Education</Title>
  <EducationList>
           {data.map((institutionData, index) => (
-            <>
             <li key={institutionData.id}>
                 <ExperienceItem>
             <ExperienceDuration>
@@ -22,7 +21,6 @@ export const Education = ({data}) => {
                 </ExperienceDetails>
                 </ExperienceItem>
               </li>
-            </>
           ))}
         </EducationList>
       </Container>

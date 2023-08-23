@@ -56,7 +56,7 @@ export const Photo = styled.div`
   display: block;
   max-width: 150px;
   border-radius: 50%;
-      filter: grayscale(1);
+      /* filter: grayscale(1); */
 }
 `
 

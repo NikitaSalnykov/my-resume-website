@@ -17,9 +17,12 @@ export const ExperienceItem = styled.div`
 `;
 
 export const ExperienceDuration = styled.div`
-max-width: 80px;
+width: 35px;
+line-height: 18px;
+text-align: center;
+
   @media screen and (min-width: 1200px) {
-  max-width: 100px;
+  width: 100px;
   }
 `
 export const ExperienceDetails = styled.div`

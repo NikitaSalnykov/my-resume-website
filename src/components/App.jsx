@@ -4,8 +4,10 @@ import { Header } from "./Header/Header.jsx";
 import { Skills } from "./Skills/Skills.jsx";
 import workExperience from '../data/workExperience.json'
 import education from '../data/education.json'
+import projects from '../data/projects.json'
 import { WorkExperience } from "./WorkExperience/WorkExperience.jsx";
 import { Education } from "./Education/Education.jsx";
+import { ProjectList } from "./ProjectList/ProjectsList.jsx";
 
 
 export const App = () => {
@@ -15,6 +17,7 @@ export const App = () => {
       <Contacts />
       <AboutMe/>
       <Skills />
+      <ProjectList projects={projects} />
       <WorkExperience data={workExperience} />
       <Education data={education}/>
     </>

@@ -5,13 +5,13 @@ import { ImMail4 } from 'react-icons/im';
 import { BsTelegram } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { ContactsList } from './Contacts.styled';
-import { Container, Section } from 'components/Resume.styled';
+import { Container } from 'components/Resume.styled';
 
 
 export const Contacts = () => {
   
   return (
-    <Section>
+    <section style={{marginTop: '8px'}}>
       <Container>
       <ContactsList
       style={{
@@ -44,6 +44,6 @@ export const Contacts = () => {
         </li>
         </ContactsList>
       </Container>
-    </Section>
+    </section>
   )
 }

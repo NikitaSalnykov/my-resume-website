@@ -3,31 +3,32 @@ import { SkillsContainer, SkillsList } from "./Skills.styled";
 
 export const Skills = () => {
   const techStack = [
-  "HTML5/CSS3",
-  "SCSS",
-  "Responsive/Adaptive Design",
-  "GIT",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Styled-components",
-  "REST API",
-  "Webpack",
-  "Parcel",
-  "Vite"
-];
+    "HTML5/CSS3",
+    "SCSS",
+    "Responsive/Adaptive Design",
+    "GIT",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Styled-components",
+    "REST API",
+    "Webpack",
+    "Parcel",
+    "Vite"
+  ];
+  
   const softSkills = [
-  "Teamwork",
-  "Adaptability",
-  "Open-mindedness",
-  "Scrum Basics"
+    "Teamwork",
+    "Adaptability",
+    "Open-mindedness",
+    "Scrum Basics"
   ];
   
   const languages = [
-  { language: "English", level: "Intermediate" },
-  { language: "Ukrainian", level: "Native" },
-  { language: "Russian", level: "Native" }
-];
+    { language: "English", level: "Intermediate" },
+    { language: "Ukrainian", level: "Native" },
+    { language: "Russian", level: "Native" }
+  ];
 
   return (
     <Section>
@@ -35,8 +36,8 @@ export const Skills = () => {
         <SkillsContainer>
           <h3>Tech Stack</h3>
           <SkillsList>
-            {techStack.map(skill => (
-              <li>
+            {techStack.map((skill, index) => (
+              <li key={`tech-${index}`}>
                 <p>{skill}</p>
               </li>
             ))}
@@ -45,8 +46,8 @@ export const Skills = () => {
         <SkillsContainer>
           <h3>Soft Skills</h3>
           <SkillsList>
-            {softSkills.map(skill => (
-              <li>
+            {softSkills.map((skill, index) => (
+              <li key={`soft-${index}`}>
                 <p>{skill}</p>
               </li>
             ))}
@@ -55,14 +56,14 @@ export const Skills = () => {
         <SkillsContainer>
           <h3>Languages</h3>
           <SkillsList>
-              {languages.map(skill => (
-                <li>
-                  <p>{skill.language} - {skill.level}</p>
-                </li>
+            {languages.map((skill, index) => (
+              <li key={`lang-${index}`}>
+                <p>{skill.language} - {skill.level}</p>
+              </li>
             ))}
           </SkillsList>
-      </SkillsContainer>
+        </SkillsContainer>
       </Container>
     </Section>
-  )
-}
+  );
+};

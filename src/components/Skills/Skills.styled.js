@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SkillsList = styled.ul`
   display: flex;
-  padding: 10px;
+  padding: 0 10px;
   flex-wrap: wrap;
   gap: 10px 20px;
 
