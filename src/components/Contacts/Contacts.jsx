@@ -28,7 +28,7 @@ export const Contacts = () => {
         </li>
         <li>
           <BsTelegram size='18'/>
-          <a href="#">Telegram</a>
+          <a href="https://t.me/nikitanespi">Telegram</a>
         </li>
         <li>
           <ImMail4 size='18'/>
@@ -36,11 +36,11 @@ export const Contacts = () => {
         </li>
         <li>
           <AiFillGithub size='18'/>
-          <a href="#">GitHub</a>
+          <a href="https://github.com/NikitaSalnykov">GitHub</a>
         </li>
         <li>
           <AiFillLinkedin size='18'/>
-          <a href="#">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/nikita-salnykov-14202127a/">LinkedIn</a>
         </li>
         </ContactsList>
       </Container>

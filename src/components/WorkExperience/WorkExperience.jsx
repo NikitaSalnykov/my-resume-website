@@ -1,6 +1,6 @@
 import { Container, Section, Title } from 'components/Resume.styled'
 import React from 'react'
-import { Delimiter, ExperienceDetails, ExperienceDuration, ExperienceItem, ExperienceSecondaryItem } from './WorkExperience.styled'
+import { Delimiter, ExperienceDetails, ExperienceDuration, ExperienceItem } from './WorkExperience.styled'
 
 export const WorkExperience = ({ data }) => {
   return (
