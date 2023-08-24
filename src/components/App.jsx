@@ -7,7 +7,7 @@ import projects from '../data/projects.json'
 import { WorkExperience } from "./WorkExperience/WorkExperience.jsx";
 import { Education } from "./Education/Education.jsx";
 import { ProjectList } from "./ProjectList/ProjectsList.jsx";
-import { Header } from "./Header/Header.jsx";
+import { Header } from "./header/Header.jsx";
 
 
 export const App = () => {
