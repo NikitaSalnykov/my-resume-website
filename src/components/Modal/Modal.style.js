@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const ModalContainer = styled.div`
   position: relative;
-    max-width: calc(100vw - 300px);
+  max-width: calc(100vw - 20px);
+  /* padding: 20px; */
 `;
 
 export const Overlay = styled.div`
@@ -24,5 +25,4 @@ export const ModalLoader = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  opacity: ${props => (props.format.endsWith('png') ? 0 : 1)};
 `;
