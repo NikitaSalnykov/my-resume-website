@@ -8,7 +8,7 @@ export const Header = () => {
       <Container>
         <HeaderContainer>
         <Photo>
-          <img src={process.env.PUBLIC_URL + '/photo.jpg'} alt="photo" width={200}/>
+          <img src={process.env.PUBLIC_URL + '/photo.jpg'} alt="Nikita Salnykov" width={200}/>
           </Photo>
         <Bio>
           <h1>Salnykov Nikita</h1>
