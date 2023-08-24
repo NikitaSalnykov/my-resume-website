@@ -19,7 +19,7 @@ export const App = () => {
       <Skills />
       <ProjectList projects={projects} />
       <WorkExperience data={workExperience} />
-      <Education data={education}/>
+      <Education data={education}/> 
     </>
   );
 };
