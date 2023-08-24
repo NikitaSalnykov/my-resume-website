@@ -4,6 +4,13 @@ export const ModalContainer = styled.div`
   position: relative;
   max-width: calc(100vw - 20px);
   /* padding: 20px; */
+  @media screen and (min-width: 768px) {
+    max-width: calc(100vw - 50px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: calc(100vw - 200px);
+  }
 `;
 
 export const Overlay = styled.div`
