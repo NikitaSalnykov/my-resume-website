@@ -47,6 +47,6 @@
     "page": "https://nikitasalnykov.github.io/goit-react-hw-04-images/",
     "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-04-images",
     "description": "Developed a responsive image search website utilizing REACT, Styled Components, JavaScript, REST API integration through AXIOS, and optimized with Webpack. The site offers a user-friendly interface for seamless image exploration.",
-    "img": {"img1": "/img/projects/imageFinder-1.jpg", "img2": "/img/projects/imageFinder-2.jpg", "img3": "/img/projects/imageFinder-3.jpg"}
+    "img": {"img1": "/img/projects/imageFinder-2.jpg", "img2": "/img/projects/imageFinder-1.jpg", "img3": "/img/projects/imageFinder-3.jpg"}
   }
 ]
