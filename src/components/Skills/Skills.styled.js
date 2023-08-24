@@ -22,6 +22,11 @@ export const SkillsList = styled.ul`
     padding: 5px 10px;
     background-color: rgb(241, 241, 241);
     border-radius: 20px;
+    transition: 0.2s ease-in-out;
+  }
+
+  & li:hover {
+    background-color: rgb(218 218 218);;
   }
 `;
 

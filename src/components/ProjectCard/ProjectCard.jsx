@@ -1,12 +1,14 @@
-import { Delimiter } from 'components/WorkExperience/WorkExperience.styled';
+import { Slider } from 'components/Slider/Slider';
 import React from 'react';
-import { ImageProject, ProjectItem, ProjectOverlay, TechnologiesList } from './ProjectCard.styled';
+import { ImageProjectOverlay, ProjectItem, ProjectLinkOverlay, ProjectOverlay, TechnologiesList } from './ProjectCard.styled';
 
-export const ProjectCard = ({ project, isAllOpen }) => {
+export const ProjectCard = ({ project }) => {
   return (
     <ProjectItem>
-        <ProjectOverlay>
-      <ImageProject src={process.env.PUBLIC_URL + project.img} alt={project.title} />
+      <ProjectOverlay>
+        <ImageProjectOverlay>
+          <Slider images={project.img} title={project.title}/>
+        </ImageProjectOverlay>
       <div>
        <h3>{project.title}</h3>
       <p><i>{project.type}</i></p>
@@ -16,15 +18,16 @@ export const ProjectCard = ({ project, isAllOpen }) => {
         </li>
           ))}
             </TechnologiesList>
-      <p>Description: {project.description}</p>
-      <div>
+          <p>Description: {project.description}</p>
+          <p>Links:</p>
+      <ProjectLinkOverlay>
         <a href={project.page} target="_blank" rel="noopener noreferrer">
-          View Project
+          Page
         </a>
         <a href={project.repositorium} target="_blank" rel="noopener noreferrer">
-          GitHub Repository
+          GitHub
         </a>
-      </div>
+      </ProjectLinkOverlay>
 </div>
       </ProjectOverlay>
   </ProjectItem>

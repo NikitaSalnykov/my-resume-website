@@ -1,28 +1,33 @@
 import styled from 'styled-components';
 
-export const ImageProject = styled.img`
-    width: 525px;
-    object-fit: cover;
-    height: 280px;
-    border-radius: 30px;
 
+export const ImageProjectOverlay = styled.div`
+    width: 320px;
+
+  & img {
+      object-fit: cover;
+      object-position: top;
+       height: 200px;
+       border-radius: 10px;
+      
   @media screen and (min-width: 375px) {
+         height: 245px;
+      
   }
 
   @media screen and (min-width: 768px) {
-    width: 400px;
-        height: 300px;
+             height: 250px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 525px;
-            height: 320px;
-
+height: 300px;
+  }
   }
 `;
 
 export const ProjectOverlay = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column-reverse;
   gap: 20px;
   @media screen and (min-width: 375px) {
@@ -51,7 +56,7 @@ export const ProjectItem = styled.li`
     width: 100%;
 
       :not(:last-child) {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
     border-bottom: solid 1px  rgb(241, 241, 241);;
   }
 
@@ -88,5 +93,33 @@ export const TechnologiesList = styled.ul`
     padding: 5px 10px;
     background-color: rgb(241, 241, 241);
     border-radius: 20px;
+        transition: 0.2s ease-in-out;
+
   }
+
+  & li:hover {
+    background-color: rgb(218 218 218);;
+  }
+`;
+
+export const ProjectLinkOverlay = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+
+
+  & a {
+    display:flex;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    border-radius: 20px;
+    opacity: 0.9;
+    transition: 0.2s ease-in-out;
+    &:hover {
+opacity: 1;
+    }
+  }
+
+
 `;

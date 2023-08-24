@@ -27,17 +27,13 @@ flex-direction: row;
     align-items: center;
     justify-content: unset;
     gap: 10px;
-
-  
-  @media screen and (min-width: 375px) {
-
-
-  }
-  @media screen and (min-width: 768px) {
-
-  }
-    @media screen and (min-width: 1200px) {
-
-  }
+        padding: 5px 7px;
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
 }
+
+    & li:hover {
+    opacity: 1;
+
+    }
 `
