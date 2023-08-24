@@ -27,8 +27,6 @@ export const ProjectCard = ({ project, isAllOpen }) => {
       </div>
 </div>
       </ProjectOverlay>
-     {!isAllOpen && project.id !== 3 && <Delimiter style={{marginTop: '24px'}}/>}
-     {isAllOpen && project.id !== 5 && <Delimiter style={{marginTop: '24px'}}/>}
   </ProjectItem>
   );
 };

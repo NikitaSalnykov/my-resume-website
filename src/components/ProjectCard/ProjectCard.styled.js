@@ -48,6 +48,14 @@ export const ProjectOverlay = styled.div`
 
 export const ProjectItem = styled.li`
   margin-bottom: 24px;
+    width: 100%;
+
+      :not(:last-child) {
+    padding-bottom: 24px;
+    border-bottom: solid 1px  rgb(241, 241, 241);;
+  }
+
+
   @media screen and (min-width: 375px) {
   }
 
