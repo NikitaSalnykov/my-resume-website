@@ -11,6 +11,7 @@ import { ProjectList } from './ProjectList/ProjectsList.jsx';
 import { Header } from './header/Header.jsx';
 import { Modal } from './Modal/Modal.jsx';
 import { Scroll } from './Scroll/Scroll.jsx';
+import { ContactWithMe } from './ContactWithMe/ContactWithMe.jsx';
 
 export const Context = React.createContext();
 
@@ -35,6 +36,7 @@ export const App = () => {
       <WorkExperience data={workExperience} />
       <Education data={education} />
       {modalActive && <Modal image={modalImg} />}
+      <ContactWithMe />
       <Scroll />
     </Context.Provider>
   );
