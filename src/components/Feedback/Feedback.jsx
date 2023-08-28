@@ -25,6 +25,7 @@ export const Feedback = () => {
         name="name"
         placeholder="Name"
         minLength="2"
+        maxLength="30"
         required
       />
       <ValidationError 
@@ -37,6 +38,7 @@ export const Feedback = () => {
         type="email" 
         name="email"
         placeholder="Email"
+         maxLength="36"
         required
       />
       <ValidationError 
@@ -50,6 +52,7 @@ export const Feedback = () => {
           name="message"
           placeholder="Your message"
           minLength="1" 
+          maxLength="500"
           required
         />
         <ValidationError 
