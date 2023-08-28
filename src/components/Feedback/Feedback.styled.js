@@ -74,15 +74,12 @@ export const FeedbackForm = styled.form`
   background-color: transparent;
     color: white;
     border: 1px solid white;
-
-   @media screen and (min-width: 375px) {
-
+  opacity: 0.6;
+  &:valid {
+      opacity: 1;
   }
-
-  @media screen and (min-width: 768px) {
-
-  }
-  @media screen and (min-width: 1200px) {
+  &:not(:placeholder-shown):invalid {
+       border: 1px solid #ff3737;
   }
   `
 
@@ -95,15 +92,12 @@ export const FeedbackForm = styled.form`
       background-color: transparent;
     color: white;
     border: 1px solid white;
-
-  @media screen and (min-width: 375px) {
-
+  opacity: 0.6;
+  &:valid {
+      opacity: 1;
   }
-
-  @media screen and (min-width: 768px) {
-
-  }
-  @media screen and (min-width: 1200px) {
+  &:not(:placeholder-shown):invalid {
+       border: 1px solid #ff3737;
   }
   `
 
@@ -115,12 +109,14 @@ export const Button = styled.button`
     background-color: transparent;
     border:  none;
   cursor: pointer;
-   @media screen and (min-width: 375px) {
-  }
-
-  @media screen and (min-width: 768px) {
-
-  }
-  @media screen and (min-width: 1200px) {
-  }
+   transition: 0.3s ease-in-out;
   `
+
+  
+export const ButtonSubmit = styled(Button)`
+    opacity: 0.8;
+    
+    &:hover { 
+    opacity: 1;
+    }
+`

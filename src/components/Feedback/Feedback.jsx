@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { Button, FeedbackForm, Input, Textarea } from './Feedback.styled';
+import { ButtonSubmit, FeedbackForm, Input, Textarea } from './Feedback.styled';
 import { TbMailForward } from 'react-icons/tb';
 import { MdMarkEmailRead } from 'react-icons/md';
 
@@ -8,11 +8,13 @@ export const Feedback = () => {
 
   const [state, handleSubmit] = useForm("xjvqwppe");
   if (state.succeeded) {
-    return <div style={{display: 'flex', flexDirection: 'column', textAlign: 'center'}}>
+    return (
+      <div style={{display: 'flex', flexDirection: 'column', textAlign: 'center'}}>
         <MdMarkEmailRead size="34" style={{padding: '10'}}/> 
-      <p><b>The message has been sent!</b></p>
-      <p style={{ margin: '14px 0' }}>I will try to answer you as soon as possible</p>
-      </div>;
+        <p><b>The message has been sent!</b></p>
+        <p style={{ margin: '14px 0' }}>I will try to answer you as soon as possible</p>
+      </div>
+    );
   }
   
   return (
@@ -22,9 +24,11 @@ export const Feedback = () => {
         type="text" 
         name="name"
         placeholder="Name"
+        minLength="2"
+        required
       />
       <ValidationError 
-        prefix="Имя" 
+        prefix="Name" 
         field="name"
         errors={state.errors}
       />
@@ -33,6 +37,7 @@ export const Feedback = () => {
         type="email" 
         name="email"
         placeholder="Email"
+        required
       />
       <ValidationError 
         prefix="Email" 
@@ -44,15 +49,17 @@ export const Feedback = () => {
           id="message"
           name="message"
           placeholder="Your message"
+          minLength="1" 
+          required
         />
         <ValidationError 
           prefix="Message" 
           field="message"
           errors={state.errors}
         />
-        <Button type="submit" disabled={state.submitting}>
+        <ButtonSubmit type="submit" disabled={state.submitting}>
           <TbMailForward size={24} color={"white"} />
-        </Button>
+        </ButtonSubmit>
       </div>
     </FeedbackForm>
   );

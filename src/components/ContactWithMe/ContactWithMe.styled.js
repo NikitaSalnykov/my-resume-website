@@ -7,4 +7,13 @@ export const Button = styled.button`
     color: white;
     border: 1px solid white;
     cursor: pointer;
+   transition: 0.3s ease-in-out;
+         transform: scale(1);
+
+    &:hover { 
+      background: white;
+    color: black;
+    }
   `
+
+
