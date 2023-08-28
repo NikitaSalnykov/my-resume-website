@@ -24,7 +24,7 @@ export const Header = () => {
           </Photo>
           <Bio>
             <h1>Salnykov Nikita</h1>
-            <p>Junior front-end developer</p>
+            <p>Front-end developer</p>
           </Bio>
         </HeaderContainer>
       </Container>
