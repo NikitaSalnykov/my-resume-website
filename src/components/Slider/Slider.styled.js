@@ -19,7 +19,4 @@ position: relative;
   opacity: 1;
 }
 }
-&:active svg {
-  display: none;
-}
 `;
