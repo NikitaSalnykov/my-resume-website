@@ -22,7 +22,7 @@ export const Slider = ({ images, title }) => {
       <SimpleSlider {...settings}>
         <SliderContainer>
           <MdZoomOutMap onClick={() => context.open(images.img1)} />
-          <img src={process.env.PUBLIC_URL + images.img1} alt={`${title}-1`} />
+          <img src={process.env.PUBLIC_URL + images.prev} alt={`${title}-1`} />
         </SliderContainer>
         <SliderContainer>
           <MdZoomOutMap onClick={() => context.open(images.img2)} />

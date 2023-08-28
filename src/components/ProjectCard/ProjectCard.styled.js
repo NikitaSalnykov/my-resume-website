@@ -9,14 +9,15 @@ export const ImageProjectOverlay = styled.div`
       object-position: top;
        height: 200px;
        border-radius: 10px;
+       width: 100%;
       
   @media screen and (min-width: 375px) {
-         height: 245px;
+         height: 295px;
       
   }
 
   @media screen and (min-width: 768px) {
-             height: 250px;
+             height: 318px;
   }
 
   @media screen and (min-width: 1200px) {

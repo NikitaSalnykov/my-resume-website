@@ -7,7 +7,7 @@
     "page": "https://nikitasalnykov.github.io/team-1-chocolate-project/",
     "repositorium": "https://github.com/NikitaSalnykov/team-1-chocolate-project",
     "description": "A website with a responsive layout, modal windows, feedback, and order forms",
-    "img": {"img1": "/img/projects/simplyChocolate-1.jpg", "img2": "/img/projects/simplyChocolate-2.jpg", "img3": "/img/projects/simplyChocolate-3.jpg"}
+    "img": {"prev": "/img/projects/simplyChocolatePrev.jpg", "img1": "/img/projects/simplyChocolate-1.jpg", "img2": "/img/projects/simplyChocolate-2.jpg", "img3": "/img/projects/simplyChocolate-3.jpg"}
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "page": "https://nikitasalnykov.github.io/goit-markup-hw-07/",
     "repositorium": "https://github.com/NikitaSalnykov/goit-markup-hw-07",
     "description": "A website with a responsive layout, a modal window, a contact form.",
-    "img": {"img1": "/img/projects/web-studio-1.jpg", "img2": "/img/projects/web-studio-2.jpg", "img3": "/img/projects/web-studio-3.jpg"}
+    "img": {"prev": "/img/projects/webStudioPrev.jpg", "img1": "/img/projects/web-studio-1.jpg", "img2": "/img/projects/web-studio-2.jpg", "img3": "/img/projects/web-studio-3.jpg"}
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "page": "https://nikitasalnykov.github.io/bookshelf-project/",
     "repositorium": "https://github.com/NikitaSalnykov/bookshelf-project",
     "description": "Developed book purchasing application with Firebase authentication, REST API database integration, shopping cart functionality, and theme switcher.",
-    "img": {"img1": "/img/projects/bookshelf-1.jpg", "img2": "/img/projects/bookshelf-2.jpg", "img3": "/img/projects/bookshelf-3.jpg"}
+    "img": {"prev": "/img/projects/bookshelfPrev.jpg", "img1": "/img/projects/bookshelf-1.jpg", "img2": "/img/projects/bookshelf-2.jpg", "img3": "/img/projects/bookshelf-3.jpg"}
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "page": "https://nikitasalnykov.github.io/goit-react-hw-05-movies/",
     "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-05-movies",
     "description": "Developed a React-based movie search website with Styled Components and Material-UI, featuring a vast movie library, intuitive search, ratings, reviews, and curated collections. Implemented responsive design for seamless user experience across devices. This project showcases my strong front-end skills and user-centered approach.",
-    "img": {"img1": "/img/projects/popcorn-1.jpg", "img2": "/img/projects/popcorn-2.jpg", "img3": "/img/projects/popcorn-3.jpg"}
+    "img": {"prev": "/img/projects/popcornPrev.jpg", "img1": "/img/projects/popcorn-1.jpg", "img2": "/img/projects/popcorn-2.jpg", "img3": "/img/projects/popcorn-3.jpg"}
   },
   {
     "id": 5,
@@ -47,6 +47,6 @@
     "page": "https://nikitasalnykov.github.io/goit-react-hw-04-images/",
     "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-04-images",
     "description": "Developed a responsive image search website utilizing REACT, Styled Components, JavaScript, REST API integration through AXIOS, and optimized with Webpack. The site offers a user-friendly interface for seamless image exploration.",
-    "img": {"img1": "/img/projects/imageFinder-2.jpg", "img2": "/img/projects/imageFinder-1.jpg", "img3": "/img/projects/imageFinder-3.jpg"}
+    "img": {"prev": "/img/projects/imageFinder-2.jpg", "img1": "/img/projects/imageFinder-2.jpg", "img2": "/img/projects/imageFinder-1.jpg", "img3": "/img/projects/imageFinder-3.jpg"}
   }
 ]
