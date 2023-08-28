@@ -12,11 +12,14 @@ position: relative;
   border-radius: 50%;
   fill: white;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
   opacity: 0.8;
  &:hover {
   transform: scale(1.1);
   opacity: 1;
 }
+}
+&:active svg {
+  display: none;
 }
 `;

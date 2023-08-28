@@ -56,7 +56,7 @@ export const Footer = () => {
           </li>
           <li>
                       <a
-            href={process.env.PUBLIC_URL + '/files/ResumeSalnykov.png'}
+            href={process.env.PUBLIC_URL + '/files/ResumeSalnykov.pdf'}
             download
           >
             <FaFileDownload size={18} />

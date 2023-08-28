@@ -9,7 +9,7 @@ export const Header = () => {
       <Container>
         <HeaderContainer>
           <a
-            href={process.env.PUBLIC_URL + '/files/ResumeSalnykov.png'}
+            href={process.env.PUBLIC_URL + '/files/ResumeSalnykov.pdf'}
             download
           >
             <FaFileDownload size={24} />
