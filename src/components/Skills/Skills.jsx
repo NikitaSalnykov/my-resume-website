@@ -97,7 +97,7 @@ switch (skill) {
         </p>
             </li>
     ) : (
-           <li key={`soft-${index}`} style={{filter: "blur(1px)"}}>
+           <li key={`soft-${index}`}>
         <p onClick={() => handleSkillDescription(skill)}>
           {skill}
         </p>
