@@ -48,5 +48,15 @@
     "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-04-images",
     "description": "Developed a responsive image search website utilizing REACT, Styled Components, JavaScript, REST API integration through AXIOS, and optimized with Webpack. The site offers a user-friendly interface for seamless image exploration.",
     "img": {"prev": "/img/projects/imageFinder-2.jpg", "img1": "/img/projects/imageFinder-2.jpg", "img2": "/img/projects/imageFinder-1.jpg", "img3": "/img/projects/imageFinder-3.jpg"}
+  },
+    {
+    "id": 6,
+    "title": "Names&Numbers",
+    "type": "Pet-project",
+    "technologies": ["REACT", "Redux Toolkit", "Material-UI", "Styled Component", "JS", "REST API", "AXIOS", "Webpack" ],
+    "page": "https://nikitasalnykov.github.io/goit-react-hw-08-phonebook/",
+    "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-08-phonebook",
+    "description": "A website for contact management. Features include contact creation, storage, deletion, and favoriting. Additionally, it provides a list of recommended contacts and a registration/login system. The website is fully responsive, built using React, and integrates with an API for data storage, with state management through React Toolkit.",
+    "img": {"prev": "/img/projects/n&nPrev.jpg", "img1": "/img/projects/n&n-1.jpg", "img2": "/img/projects/n&n-2.jpg", "img3": "/img/projects/n&n-3.jpg"}
   }
 ]
