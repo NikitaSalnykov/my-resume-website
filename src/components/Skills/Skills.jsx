@@ -26,6 +26,8 @@ export const Skills = () => {
     'Adaptability',
     'Open-mindedness',
     'Scrum Basics',
+    "Self-management skills",
+    "Organization and Planning skills",
   ];
 
   const languages = [
@@ -43,49 +45,54 @@ export const Skills = () => {
   };
 
   const getSkillDescription = skill => {
-    switch (skill) {
-      case 'HTML5/CSS3':
-        return 'Semantic HTML, CSS Grid/Flexbox layouts, responsive & accessible forms';
-      case 'SCSS':
-        return 'Modular styles using SCSS, nesting, variables, mixins';
-      case 'Responsive/Adaptive Design':
-        return 'Designing adaptable layouts with media queries and fluid grids';
-      case 'GIT':
-        return 'Version control, branching, merging, collaboration with Git';
-      case 'JavaScript':
-        return 'Interactive elements, DOM manipulation, async programming';
-      case 'TypeScript':
-        return 'Static typing, interfaces, types, enhanced code quality';
-      case 'React':
-        return 'Building dynamic UIs, state management, React Router';
-      case 'Styled-components':
-        return 'Styling React components with dynamic styles';
-      case 'REST API':
-        return 'Consuming and designing RESTful APIs, HTTP requests';
-      case 'Axios':
-        return 'Making HTTP requests, handling responses with Axios';
-      case 'Redux Toolkit':
-        return 'State management with Redux Toolkit, reducers, actions';
-      case 'Material-UI/Tailwind':
-        return 'Creating UI components with Material-UI and Tailwind ';
-      case 'Webpack':
-        return 'Bundling and optimizing assets with Webpack';
-      case 'Parcel':
-        return 'Zero-config web application bundler for quick setups';
-      case 'Vite':
-        return 'Fast build tool focused on speed for modern web projects';
-      case 'Teamwork':
-        return 'Collaborative and effective team player, communication skills';
-      case 'Adaptability':
-        return 'Quickly adapt to new challenges and dynamic environments';
-      case 'Open-mindedness':
-        return 'Willingness to consider diverse perspectives and ideas';
-      case 'Scrum Basics':
-        return 'Fundamental understanding of Scrum framework for agile project management';
-      default:
-        return '';
-    }
-  };
+  switch (skill) {
+    case 'HTML5/CSS3':
+      return 'Semantic HTML, CSS Grid/Flexbox layouts, responsive & accessible forms';
+    case 'SCSS':
+      return 'Modular styles using SCSS, nesting, variables, mixins';
+    case 'Responsive/Adaptive Design':
+      return 'Designing adaptable layouts with media queries and fluid grids';
+    case 'GIT':
+      return 'Version control, branching, merging, collaboration with Git';
+    case 'JavaScript':
+      return 'Interactive elements, DOM manipulation, async programming';
+    case 'TypeScript':
+      return 'Static typing, interfaces, types, enhanced code quality';
+    case 'React':
+      return 'Building dynamic UIs, state management, React Router';
+    case 'Styled-components':
+      return 'Styling React components with dynamic styles';
+    case 'REST API':
+      return 'Consuming and designing RESTful APIs, HTTP requests';
+    case 'Axios':
+      return 'Making HTTP requests, handling responses with Axios';
+    case 'Redux Toolkit':
+      return 'State management with Redux Toolkit, reducers, actions';
+    case 'Material-UI/Tailwind':
+      return 'Creating UI components with Material-UI and Tailwind ';
+    case 'Webpack':
+      return 'Bundling and optimizing assets with Webpack';
+    case 'Parcel':
+      return 'Zero-config web application bundler for quick setups';
+    case 'Vite':
+      return 'Fast build tool focused on speed for modern web projects';
+    case 'Teamwork':
+      return 'Collaborative and effective team player, communication skills';
+    case 'Adaptability':
+      return 'Quickly adapt to new challenges and dynamic environments';
+    case 'Open-mindedness':
+      return 'Willingness to consider diverse perspectives and ideas';
+    case 'Scrum Basics':
+      return 'Fundamental understanding of Scrum framework for agile project management';
+    case 'Self-management skills':
+      return 'Effectively managing one’s time, resources, and responsibilities';
+    case 'Organization and Planning skills':
+      return 'Skillful planning, organizing tasks, and setting priorities';
+    default:
+      return '';
+  }
+};
+
 
   return (
     <Section>
