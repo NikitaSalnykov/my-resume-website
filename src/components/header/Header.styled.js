@@ -20,6 +20,24 @@ export const CustomHeader = styled.header`
   }
 `;
 
+export const LanguageSwitcher = styled.header`
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  top: 10px;
+  right: 20px; 
+
+& div {
+
+      padding: 4px;
+}
+`;
+
+export const LanguageButton = styled.button`
+  font-weight: ${(props) => (props.isActive ? '600' : '400')}; /* font-semibold, если активен */
+  opacity: ${(props) => (props.isActive ? '1' : '0.75')}; /* opacity-75, если не активен */
+`;
+
 export const HeaderContainer = styled.div`
   position: relative;
 
@@ -52,8 +70,8 @@ export const HeaderContainer = styled.div`
 
   & a {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
 
     display: flex;
     justify-content: center;
@@ -86,18 +104,17 @@ export const Bio = styled.div`
   font-size: 14px;
   line-height: calc(24 / 18);
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-align: center;
+  text-align: start;
 
   & p {
     @media screen and (min-width: 375px) {
       font-size: 14x;
     }
     @media screen and (min-width: 768px) {
-      font-size: 24x;
+      font-size: 20px;
     }
     @media screen and (min-width: 1200px) {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
   & h1 {

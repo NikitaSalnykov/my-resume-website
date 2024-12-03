@@ -1,19 +1,37 @@
 [
   { 
-  "id": 1, 
-  "company": "MedAssistance Ltd.", 
-  "duration": "2021 - now", 
-  "position": "Department Manager",
-  "responsibilities": ["Spearheaded the development and oversight of the company's event organization division.", 
-  "Managed and executed various projects within the company, ensuring seamless project management processes.", 
-  "Led the selection and formation of effective teams, demonstrating strong leadership skills."]  },
+    "id": 1, 
+    "company": "MedAssistance Ltd.", 
+    "duration": "2021 - тепер", 
+    "position": "Department Manager",
+    "positionUa": "Керівник відділу",
+    "responsibilities": [
+      "Department leadership and strategic development.",
+      "Project management within the company.",
+      "Leadership and selection of key team members."
+    ],
+    "responsibilitiesUa": [
+      "Керівництво відділом та стратегічний розвиток.",
+      "Управління проектами в межах компанії.",
+      "Лідерство та відбір ключових членів команди."
+    ]
+  },
  
   { 
-   "id": 2, 
-  "company": "Biostrategy Ltd.", 
-  "duration": "2019 - 2021", 
-  "position": "Manager",
-  "responsibilities": ["Coordinated and executed medical conferences, ensuring seamless organization and execution", 
-  "Oversaw and managed projects within educational fields, guaranteeing effective project delivery.", 
-  "Collaborated with commercial clients, addressing their needs and ensuring successful partnerships."]  }
+    "id": 2, 
+    "company": "Biostrategy Ltd.", 
+    "duration": "2019 - 2021", 
+    "position": "Manager",
+    "positionUa": "Менеджер",
+    "responsibilities": [
+      "Organizing and hosting medical conferences.",
+      "Managing projects in the educational sector.",
+      "Working with commercial clients."
+    ],
+    "responsibilitiesUa": [
+      "Організація та проведення медичних конференцій.",
+      "Управління проектами в освітньому секторі.",
+      "Робота з комерційними клієнтами."
+    ]
+  }
 ]

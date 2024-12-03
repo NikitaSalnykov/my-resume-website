@@ -3,60 +3,153 @@
     "id": 1,
     "title": "Simply Chocolate",
     "type": "Team Project (Role: Team Lead & Developer)",
+    "typeUa": "Командний проєкт (Роль: Керівник команди та розробник)",
     "technologies": ["HTML", "CSS", "JS", "Parcel"],
     "page": "https://nikitasalnykov.github.io/team-1-chocolate-project/",
     "repositorium": "https://github.com/NikitaSalnykov/team-1-chocolate-project",
     "description": "A website with a responsive layout, modal windows, feedback, and order forms",
-    "img": {"prev": "/img/projects/simplyChocolatePrev.jpg", "img1": "/img/projects/simplyChocolate-1.jpg", "img2": "/img/projects/simplyChocolate-2.jpg", "img3": "/img/projects/simplyChocolate-3.jpg"}
+    "descriptionUa": "Вебсайт з адаптивною розміткою, модальними вікнами, формами зворотного зв'язку та замовлення.",
+    "img": {
+      "prev": "/img/projects/simplyChocolatePrev.jpg",
+      "img1": "/img/projects/simplyChocolate-1.jpg",
+      "img2": "/img/projects/simplyChocolate-2.jpg",
+      "img3": "/img/projects/simplyChocolate-3.jpg"
+    }
   },
   {
     "id": 2,
     "title": "WebStudio",
     "type": "Individual Project",
+    "typeUa": "Індивідуальний проєкт",
     "technologies": ["HTML", "CSS", "JS", "Parcel"],
     "page": "https://nikitasalnykov.github.io/goit-markup-hw-07/",
     "repositorium": "https://github.com/NikitaSalnykov/goit-markup-hw-07",
     "description": "A website with a responsive layout, a modal window, a contact form.",
-    "img": {"prev": "/img/projects/webStudioPrev.jpg", "img1": "/img/projects/web-studio-1.jpg", "img2": "/img/projects/web-studio-2.jpg", "img3": "/img/projects/web-studio-3.jpg"}
+    "descriptionUa": "Вебсайт з адаптивною розміткою, модальним вікном та формою для зворотного зв'язку.",
+    "img": {
+      "prev": "/img/projects/webStudioPrev.jpg",
+      "img1": "/img/projects/web-studio-1.jpg",
+      "img2": "/img/projects/web-studio-2.jpg",
+      "img3": "/img/projects/web-studio-3.jpg"
+    }
   },
   {
     "id": 3,
     "title": "Bookshelf",
     "type": "Team Project (Role: Team Lead & Developer)",
+    "typeUa": "Командний проєкт (Роль: Керівник команди та розробник)",
     "technologies": ["HTML", "CSS", "JS", "REST API", "AXIOS", "Parcel"],
     "page": "https://nikitasalnykov.github.io/bookshelf-project/",
     "repositorium": "https://github.com/NikitaSalnykov/bookshelf-project",
     "description": "Developed book purchasing application with Firebase authentication, REST API database integration, shopping cart functionality, and theme switcher.",
-    "img": {"prev": "/img/projects/bookshelfPrev.jpg", "img1": "/img/projects/bookshelf-1.jpg", "img2": "/img/projects/bookshelf-2.jpg", "img3": "/img/projects/bookshelf-3.jpg"}
+    "descriptionUa": "Розроблено додаток для покупки книг з автентифікацією через Firebase, інтеграцією бази даних через REST API, функціоналом кошика та перемикачем тем.",
+    "img": {
+      "prev": "/img/projects/bookshelfPrev.jpg",
+      "img1": "/img/projects/bookshelf-1.jpg",
+      "img2": "/img/projects/bookshelf-2.jpg",
+      "img3": "/img/projects/bookshelf-3.jpg"
+    }
   },
   {
     "id": 4,
     "title": "Popcorn",
     "type": "Pet-project",
+    "typeUa": "Пет-проєкт",
     "technologies": ["REACT", "Styled Component", "Material-UI", "JS", "REST API", "AXIOS", "Webpack"],
     "page": "https://nikitasalnykov.github.io/goit-react-hw-05-movies/",
     "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-05-movies",
     "description": "Developed a React-based movie search website with Styled Components and Material-UI, featuring a vast movie library, intuitive search, ratings, reviews, and curated collections. Implemented responsive design for seamless user experience across devices. This project showcases my strong front-end skills and user-centered approach.",
-    "img": {"prev": "/img/projects/popcornPrev.jpg", "img1": "/img/projects/popcorn-1.jpg", "img2": "/img/projects/popcorn-2.jpg", "img3": "/img/projects/popcorn-3.jpg"}
+    "descriptionUa": "Розроблено вебсайт для пошуку фільмів на React з використанням Styled Components та Material-UI, що включає велику бібліотеку фільмів, інтуїтивний пошук, рейтинги, відгуки та підбірки. Реалізовано адаптивний дизайн для безперешкодного використання на різних пристроях. Цей проєкт демонструє мої сильні навички у фронтенд-розробці та орієнтованість на користувача.",
+    "img": {
+      "prev": "/img/projects/popcornPrev.jpg",
+      "img1": "/img/projects/popcorn-1.jpg",
+      "img2": "/img/projects/popcorn-2.jpg",
+      "img3": "/img/projects/popcorn-3.jpg"
+    }
   },
   {
     "id": 5,
     "title": "Images Founder",
     "type": "Pet-project",
+    "typeUa": "Пет-проєкт",
     "technologies": ["REACT", "Styled Component", "JS", "REST API", "AXIOS", "Webpack"],
     "page": "https://nikitasalnykov.github.io/goit-react-hw-04-images/",
     "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-04-images",
     "description": "Developed a responsive image search website utilizing REACT, Styled Components, JavaScript, REST API integration through AXIOS, and optimized with Webpack. The site offers a user-friendly interface for seamless image exploration.",
-    "img": {"prev": "/img/projects/imageFinder-2.jpg", "img1": "/img/projects/imageFinder-2.jpg", "img2": "/img/projects/imageFinder-1.jpg", "img3": "/img/projects/imageFinder-3.jpg"}
+    "descriptionUa": "Розроблено адаптивний вебсайт для пошуку зображень з використанням REACT, Styled Components, JavaScript, інтеграцією REST API через AXIOS і оптимізацією з Webpack. Сайт пропонує зручний інтерфейс для безперешкодного перегляду зображень.",
+    "img": {
+      "prev": "/img/projects/imageFinder-2.jpg",
+      "img1": "/img/projects/imageFinder-2.jpg",
+      "img2": "/img/projects/imageFinder-1.jpg",
+      "img3": "/img/projects/imageFinder-3.jpg"
+    }
   },
-    {
+  {
     "id": 6,
     "title": "Names&Numbers",
     "type": "Pet-project",
-    "technologies": ["REACT", "Redux Toolkit", "Material-UI", "Styled Component", "JS", "REST API", "AXIOS", "Webpack" ],
+    "typeUa": "Пет-проєкт",
+    "technologies": ["REACT", "Redux Toolkit", "Material-UI", "Styled Component", "JS", "REST API", "AXIOS", "Webpack"],
     "page": "https://nikitasalnykov.github.io/goit-react-hw-08-phonebook/",
     "repositorium": "https://github.com/NikitaSalnykov/goit-react-hw-08-phonebook",
     "description": "A website for contact management. Features include contact creation, storage, deletion, and favoriting. Additionally, it provides a list of recommended contacts and a registration/login system. The website is fully responsive, built using React, and integrates with an API for data storage, with state management through React Toolkit.",
-    "img": {"prev": "/img/projects/n&nPrev.jpg", "img1": "/img/projects/n&n-1.jpg", "img2": "/img/projects/n&n-2.jpg", "img3": "/img/projects/n&n-3.jpg"}
+    "descriptionUa": "Вебсайт для управління контактами. Функції включають створення, збереження, видалення та додавання в обране контактів. Також є список рекомендованих контактів та система реєстрації/входу. Вебсайт повністю адаптивний, розроблений за допомогою React, інтегрується з API для зберігання даних, а управління станом здійснюється через React Toolkit.",
+    "img": {
+      "prev": "/img/projects/n&nPrev.jpg",
+      "img1": "/img/projects/n&n-1.jpg",
+      "img2": "/img/projects/n&n-2.jpg",
+      "img3": "/img/projects/n&n-3.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "title": "MedAccount",
+    "type": "Team Project / Role: Product Owner",
+    "typeUa": "Командний проєкт / Роль: Product Owner",
+    "technologies": ["Next JS", "React Native", "Tailwind", "REST API", "AXIOS", "Webpack"],
+    "page": "https://medaccount.com.ua/",
+    "repositorium": "https://github.com/MedAccount/medaccount-client",
+    "description": "As a Product Owner, I led the development of MedAccount, the first professional social network for doctors in Ukraine. The platform provides multifunctional tools, including online conferences, hybrid events in teleconference format, creation of posts, groups, consultations, and discussions of clinical cases. It also features user profile storage for certificates and a constantly updated database of medical protocols and guidelines. Additionally, I oversaw the integration of AI based on ChatGPT to enhance functionality and address various user needs.",
+    "descriptionUa": "Як Product Owner я очолював розробку MedAccount, першої професійної соціальної мережі для лікарів в Україні. Платформа надає багатофункціональні інструменти, включаючи онлайн-конференції, гібридні події у форматі телемосту, створення постів, груп, консультацій та обговорення клінічних випадків. Також є можливість зберігання профілю користувача для сертифікатів і постійно оновлювана база медичних протоколів та рекомендацій. Крім того, я контролював інтеграцію ШІ на основі ChatGPT для покращення функціональності та задоволення різноманітних потреб користувачів.",
+    "img": {
+      "prev": "/img/projects/medacc.png",
+      "img1": "/img/projects/medacc-scr.png",
+      "img2": "/img/projects/medacc-scr2.jpg",
+      "img3": "/img/projects/medacc-scr3.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Memorial Service",
+    "type": "Individual Project",
+    "typeUa": "Індивідуальний проєкт",
+    "technologies": ["JS", "React", "Tailwind", "Webpack"],
+    "page": "https://ms.dp.ua/",
+    "repositorium": "https://github.com/NikitaSalnykov/granite-monuments-store",
+    "description": "Development of a website for a company providing memorial services. The project was delivered turnkey, including complete frontend and backend development, hosting setup, and deployment according to the client's requirements. The site features an admin panel for managing products, reviews, and photo galleries.",
+    "descriptionUa": "Розробка вебсайту для компанії, що надає меморіальні послуги. проєкт був виконаний під ключ, включаючи повну розробку фронтенду та бекенду, налаштування хостингу та деплоймент відповідно до вимог клієнта. Сайт має панель адміністратора для управління продуктами, відгуками та фото-галереями.",
+    "img": {
+      "prev": "/img/projects/memorial.png",
+      "img1": "/img/projects/memorial-scr.jpg",
+      "img2": "/img/projects/memorial-scr2.jpg",
+      "img3": "/img/projects/memorial-scr3.jpg"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Your Pets",
+    "type": "Team Project",
+    "typeUa": "Командний проєкт",
+    "technologies": ["JS", "React", "Tailwind", "Vite", "AXIOS", "Formik"],
+    "page": "https://borysshabazov.github.io/YourPet/",
+    "repositorium": "https://github.com/BorysShabazov/YourPet",
+    "description": "Development of a website for pet lovers, offering features such as profile creation, posting announcements, and browsing news. The project includes full frontend and backend development, utilizing modern technologies like React, JavaScript, and Tailwind for the user interface, and Vite for fast development. The website provides an easy-to-use platform for pet owners to connect, share updates, and stay informed.",
+    "descriptionUa": "Розробка вебсайту для любителів тварин, що надає можливості для створення профілів, публікації оголошень та перегляду новин. проєкт включає повну розробку фронтенду та бекенду, використовуючи сучасні технології, такі як React, JavaScript, Tailwind для інтерфейсу користувача та Vite для швидкої розробки. Сайт надає зручну платформу для власників тварин для взаємодії, обміну новинами та залишатися в курсі подій.",
+    "img": {
+      "prev": "/img/projects/pet.jpg",
+      "img1": "/img/projects/pet-scr.jpg",
+      "img2": "/img/projects/pet-scr2.jpg",
+      "img3": "/img/projects/pet-scr3.jpg"
+    }
   }
 ]

@@ -1,12 +1,17 @@
 import { Container, Section, Title } from 'components/Resume.styled'
 import React from 'react'
 import { Delimiter, ExperienceDetails, ExperienceDuration, ExperienceItem } from './WorkExperience.styled'
+import { useTranslation } from 'react-i18next';
 
 export const WorkExperience = ({ data }) => {
+  const { i18n, t } = useTranslation();
+
+  const currentLanguage = i18n.language
+
   return (
     <Section>
       <Container>
-        <Title>Work Experience</Title>
+        <Title>{t('work-experience')}</Title>
         <ul>
           {data.map((companyData, index) => (
             <li key={companyData.id}>
@@ -15,10 +20,13 @@ export const WorkExperience = ({ data }) => {
                 <p>{companyData.duration}</p>
               </ExperienceDuration>
               <ExperienceDetails>
-                <p><b>{companyData.company}</b></p>
-                <p style={{marginBottom: "14px"}}><i>{companyData.position}</i></p>
+                <p><b>{currentLanguage === 'eng' ? companyData.company : companyData.companyUa}</b></p>
+                <p style={{marginBottom: "14px"}}><i>{currentLanguage === 'eng' ? companyData.position : companyData.positionUa}</i></p>
                 <ul style={{listStyle: "circle"}}>
-                  {companyData.responsibilities.map((responsibility, index) => (
+                  {currentLanguage === 'eng' ? companyData.responsibilities.map((responsibility, index) => (
+                    <li key={index}><p>{responsibility}</p></li>
+
+                  )) : companyData.responsibilitiesUa.map((responsibility, index) => (
                     <li key={index}><p>{responsibility}</p></li>
 
                   ))}

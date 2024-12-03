@@ -37,4 +37,8 @@ export const Title = styled.h2`
 margin-bottom: 18px;
 text-align: center;
 text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 4px;
 `

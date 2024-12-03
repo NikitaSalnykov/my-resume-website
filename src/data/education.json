@@ -1,6 +1,8 @@
 [
   { "id": 1, 
-    "title": "Fullstack Developer", "duration": "2022 - 2023", "institution": "IT School GoIT" },
+    "title": "Fullstack Developer", "duration": "2022 - 2023", "institution": "IT School GoIT",
+    "titlea": "Fullstack Developer", "duration-ua": "2022 - 2023", "institution-ua": "IT School GoIT" },
   { "id": 2, 
-    "title": "Master's degree in Managment", "duration": "2013 - 2019", "institution": "Dnipro University of Technology" }
+    "title": "Master's degree in Managment", "duration": "2013 - 2019", "institution": "Dnipro University of Technology",
+    "titleUa": "Магістр з менеджменту", "duration-ua": "2022 - 2023", "institution-ua": "Дніпровська політехніка" }
 ]

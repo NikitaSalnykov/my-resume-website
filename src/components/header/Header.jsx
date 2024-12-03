@@ -1,19 +1,48 @@
-import { Container, Section } from 'components/Resume.styled';
 import React from 'react';
-import { HeaderContainer, Photo, Bio } from './Header.styled';
+import { useTranslation } from 'react-i18next';
 import { FaFileDownload } from 'react-icons/fa';
+import { Container, Section } from 'components/Resume.styled';
+import { HeaderContainer, Photo, Bio, LanguageSwitcher, LanguageButton } from './Header.styled';
 
 export const Header = () => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <Section>
       <Container>
         <HeaderContainer>
-          <a
-            href={process.env.PUBLIC_URL + '/files/ResumeSalnykov.pdf'}
-            download
-          >
+          {currentLanguage === "eng" ? <a href={process.env.PUBLIC_URL + '/files/ResumeSalnykov.pdf'} download>
             <FaFileDownload size={24} />
-          </a>
+          </a> : <a href={process.env.PUBLIC_URL + '/files/ResumeSalnykovUa.pdf'} download>
+            <FaFileDownload size={24} />
+          </a>}
+
+          {currentLanguage && (
+            <LanguageSwitcher>
+              <div>
+                <LanguageButton
+                  onClick={() => changeLanguage('ua')}
+                  isActive={currentLanguage === 'ua'}
+                >
+                  укр
+                </LanguageButton>
+              </div>
+              <div>|</div>
+              <div>
+                <LanguageButton
+                  onClick={() => changeLanguage('eng')}
+                  isActive={currentLanguage === 'eng'}
+                >
+                  eng
+                </LanguageButton>
+              </div>
+            </LanguageSwitcher>
+          )}
 
           <Photo>
             <img
@@ -23,8 +52,10 @@ export const Header = () => {
             />
           </Photo>
           <Bio>
-            <h1>Salnykov Nikita</h1>
-            <p>Front-end developer</p>
+            <h1>{t('name')}</h1>
+            <p>Front-end developer,</p>
+            <p>Project Manager,</p>
+            <p>Project Owner</p>
           </Bio>
         </HeaderContainer>
       </Container>

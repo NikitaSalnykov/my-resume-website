@@ -29,7 +29,7 @@ height: 300px;
 export const ProjectOverlay = styled.div`
   display: flex;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 20px;
   @media screen and (min-width: 375px) {
   }
@@ -57,7 +57,7 @@ export const ProjectItem = styled.li`
     width: 100%;
 
       :not(:last-child) {
-    padding-bottom: 32px;
+    padding-bottom: 8px;
     border-bottom: solid 1px  rgb(241, 241, 241);;
   }
 

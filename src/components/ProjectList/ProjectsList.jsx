@@ -2,10 +2,12 @@ import { ProjectCard } from 'components/ProjectCard/ProjectCard';
 import { Container, Section, Title } from 'components/Resume.styled';
 import React, { useState } from 'react';
 import { ProjectsButtonContainer } from './ProjectList.styled';
+import { useTranslation } from 'react-i18next';
 
 export const ProjectList = ({ projects }) => {
   const [isAllOpen, setIsAllOpen] = useState(false);
-  const selectedProjects = [projects[2], projects[5], projects[0], projects[3]];
+  const selectedProjects = [projects[6], projects[7], projects[2], projects[8]];
+  const { t } = useTranslation();
 
   const onAllProjects = () => {
     setIsAllOpen(true);
@@ -17,18 +19,18 @@ export const ProjectList = ({ projects }) => {
   return (
     <Section>
       <Container>
-        <Title>Projects</Title>
+        <Title>{t('projects')}</Title>
         <ProjectsButtonContainer>
           <button onClick={onSelectedProjects} disabled={!isAllOpen}>
-            Selected
+            {t('selected-projects')}
           </button>
           <button onClick={onAllProjects} disabled={isAllOpen}>
-            All projects ({projects.length})
+            {t('all-projects')} ({projects.length})
           </button>
         </ProjectsButtonContainer>
         <ul>
           {isAllOpen
-            ? projects.map(project => (
+            ?  [...projects].reverse().map(project => (
                 <ProjectCard
                   key={project.id}
                   project={project}

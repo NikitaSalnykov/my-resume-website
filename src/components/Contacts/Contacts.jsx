@@ -6,8 +6,11 @@ import { BsTelegram } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { ContactsList } from './Contacts.styled';
 import { Container } from 'components/Resume.styled';
+import { useTranslation } from 'react-i18next';
 
 export const Contacts = () => {
+  const { t } = useTranslation();
+
   return (
     <section style={{ marginTop: '8px' }}>
       <Container>
@@ -21,7 +24,7 @@ export const Contacts = () => {
         >
           <li>
             <HiLocationMarker size="18" />
-            <p> Dnipro, Ukraine</p>
+            <p>{t('adress')}</p> 
           </li>
           <li>
             <FaPhoneAlt size="18" />
@@ -34,7 +37,7 @@ export const Contacts = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Telegram
+              {t('Telegram')} 
             </a>
           </li>
           <li>
