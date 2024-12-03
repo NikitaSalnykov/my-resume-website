@@ -6,7 +6,7 @@ import { HeaderContainer, Photo, Bio, LanguageSwitcher, LanguageButton } from '.
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
-  const currentLanguage = i18n.language;
+  const currentLanguage = i18n.language || "ua";
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -27,7 +27,7 @@ export const Header = () => {
               <div>
                 <LanguageButton
                   onClick={() => changeLanguage('ua')}
-                  isActive={currentLanguage === 'ua'}
+                  isActive={currentLanguage === 'ua'|| currentLanguage.includes('ua')}
                 >
                   укр
                 </LanguageButton>
@@ -36,7 +36,7 @@ export const Header = () => {
               <div>
                 <LanguageButton
                   onClick={() => changeLanguage('eng')}
-                  isActive={currentLanguage === 'eng'}
+                  isActive={currentLanguage === 'eng' || currentLanguage.includes('eng')}
                 >
                   eng
                 </LanguageButton>
