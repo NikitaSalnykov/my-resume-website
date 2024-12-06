@@ -42,5 +42,7 @@
   "description": "Опис",
   "links": "Посилання",
   "page": "Сторінка",
-  "page-github": "Сторінка GitHub"
+  "page-github": "Сторінка GitHub",
+  "read-more": "Детальніше",
+  "collapse": "Згорнути"
 }

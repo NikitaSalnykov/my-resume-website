@@ -2,6 +2,7 @@ import { Slider } from 'components/Slider/Slider';
 import React from 'react';
 import { ImageProjectOverlay, ProjectItem, ProjectLinkOverlay, ProjectOverlay, TechnologiesList } from './ProjectCard.styled';
 import { useTranslation } from 'react-i18next';
+import {CutText} from 'helpers/CutText';
 
 export const ProjectCard = ({ project }) => {
   const { i18n, t } = useTranslation();
@@ -23,7 +24,10 @@ export const ProjectCard = ({ project }) => {
         </li>
           ))}
             </TechnologiesList>
-          <p><span>{t('description')}:</span> {currentLanguage === 'eng' ? project.description : project.descriptionUa}</p>
+          <div>
+          <p style={{margin: "0"}}>{t('description')}:</p>
+          {currentLanguage === 'eng' ?  <CutText text={project.description}/> :  <CutText text={project.descriptionUa}/>}
+          </div>
           <p>{t('links')}:</p>
       <ProjectLinkOverlay>
         <a href={project.page} target="_blank" rel="noopener noreferrer">

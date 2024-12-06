@@ -40,12 +40,11 @@ export const LanguageButton = styled.button`
 
 export const HeaderContainer = styled.div`
   position: relative;
-
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
-
+  overflow: 'hidden';
   display: flex;
   justify-content: center;
   gap: 10px;

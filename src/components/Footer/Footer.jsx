@@ -6,8 +6,14 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { Container } from 'components/Resume.styled';
 import { ContactsList } from 'components/Contacts/Contacts.styled';
 import { FaFileDownload } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+  const { i18n } = useTranslation();
+
+  const currentLanguage = i18n.language || "ua";
+
+
   return (
     <section style={{ marginTop: '8px' }}>
       <Container>
@@ -55,12 +61,11 @@ export const Footer = () => {
             </a>
           </li>
           <li>
-                      <a
-            href={process.env.PUBLIC_URL + '/files/ResumeSalnykov.pdf'}
-            download
-          >
+          {currentLanguage === "eng" ? <a href={process.env.PUBLIC_URL + '/files/ResumeSalnykov.pdf'} download>
             <FaFileDownload size={18} />
-          </a>
+          </a> : <a href={process.env.PUBLIC_URL + '/files/ResumeSalnykovUa.pdf'} download>
+            <FaFileDownload size={18} />
+          </a>}
           </li>
         </ContactsList>
       </Container>

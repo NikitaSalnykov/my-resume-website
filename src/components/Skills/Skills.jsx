@@ -2,6 +2,7 @@ import { Container, Section } from 'components/Resume.styled';
 import { useState } from 'react';
 import { SkillsContainer, SkillsList } from './Skills.styled';
 import { useTranslation } from 'react-i18next';
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 export const Skills = () => {
   const { i18n, t } = useTranslation();
@@ -23,6 +24,18 @@ export const Skills = () => {
     'Webpack',
     'Parcel',
     'Vite',
+    'Node.js',
+    'Express.js',
+    'Next.js',
+    'WebSockets',
+    'Docker',
+    'Authentication/Authorization',
+    'React Native',
+    'Formik/React Hook Form',
+    'Zustand',
+    'ESLint/Prettier',
+    'Redux',
+    'Tailwind CSS',
   ];
 
   const softSkills = [
@@ -40,7 +53,7 @@ export const Skills = () => {
     { language: 'Russian', level: 'Native' },
   ];
 
-  // Переклади для назв софт скілів на англійській та українській
+  // Переводы для soft skills
   const softSkillsTranslationsEn = {
     'Teamwork': 'Teamwork',
     'Adaptability': 'Adaptability',
@@ -59,6 +72,7 @@ export const Skills = () => {
     'Organization and Planning skills': 'Навички організації та планування',
   };
 
+  // Описание для tech stack
   // Опис для англійської мови
   const techStackDescriptionsEn = {
     'HTML5/CSS3': 'Semantic HTML, CSS Grid/Flexbox layouts, responsive & accessible forms',
@@ -73,15 +87,21 @@ export const Skills = () => {
     'Axios': 'Making HTTP requests, handling responses with Axios',
     'Redux Toolkit': 'State management with Redux Toolkit, reducers, actions',
     'Material-UI/Tailwind': 'Creating UI components with Material-UI and Tailwind',
+    "Formik/React Hook Form": "Form management and validation in React applications",
+    "Node.js": "Server-side development, working with files, streams, APIs, and server applications",
+    "Express.js": "Building server-side applications and REST APIs with a minimalist framework",
+    "Next.js": "Developing server-rendered applications (SSR) and static sites (SSG)",
+    "ESLint/Prettier": "Maintaining code quality and automatic formatting",
+    "WebSockets": "Real-time implementation using two-way communication",
+    "Docker": "Application containerization and environment management",
+    "Authentication/Authorization": "Implementing OAuth, JWT, and Cookies for secure access",
+    "React Native": "Building cross-platform mobile applications using React",
+    "Zustand": "Lightweight state management for React applications",
+    "Redux": "State management for complex React applications, actions, reducers",
+    "Tailwind CSS": "Utility-first CSS framework for rapidly building custom designs",
     'Webpack': 'Bundling and optimizing assets with Webpack',
     'Parcel': 'Zero-config web application bundler for quick setups',
     'Vite': 'Fast build tool focused on speed for modern web projects',
-    'Teamwork': 'Collaborative and effective team player, communication skills',
-    'Adaptability': 'Quickly adapt to new challenges and dynamic environments',
-    'Open-mindedness': 'Willingness to consider diverse perspectives and ideas',
-    'Scrum Basics': 'Fundamental understanding of Scrum framework for agile project management',
-    'Self-management skills': 'Effectively managing one’s time, resources, and responsibilities',
-    'Organization and Planning skills': 'Skillful planning, organizing tasks, and setting priorities',
   };
 
   // Опис для української мови
@@ -98,9 +118,34 @@ export const Skills = () => {
     'Axios': 'Виконання HTTP запитів, обробка відповідей за допомогою Axios',
     'Redux Toolkit': 'Управління станом з Redux Toolkit, редюсери, дії',
     'Material-UI/Tailwind': 'Створення компонентів інтерфейсу з Material-UI та Tailwind',
+    "Formik/React Hook Form": "Управління та валідація форм у React-додатках",
+    "Node.js": "Серверна розробка, робота з файлами, потоками, API та серверними додатками",
+    "Express.js": "Створення серверних додатків та REST API за допомогою мінімалістичного фреймворка",
+    "Next.js": "Розробка додатків із серверним рендерингом (SSR) і статичних сайтів (SSG)",
+    "ESLint/Prettier": "Підтримка якості коду та автоматичне форматування",
+    "WebSockets": "Реалізація взаємодії в реальному часі через двосторонній зв'язок",
+    "Docker": "Контейнеризація додатків та управління середовищами",
+    "Authentication/Authorization": "Реалізація OAuth, JWT та Cookies для безпечного доступу",
+    "React Native": "Розробка кросплатформних мобільних додатків з використанням React",
+    "Zustand": "Легке управління станом у React-додатках",
+    "Redux": "Управління станом для складних React-додатків, дії, ред'юсери",
+    "Tailwind CSS": "CSS-фреймворк з підходом utility-first для швидкого створення кастомного дизайну",
     'Webpack': 'Пакування та оптимізація активів за допомогою Webpack',
     'Parcel': 'Пакувальник веб-застосунків без налаштувань для швидких налаштувань',
     'Vite': 'Швидкий інструмент для зборки, орієнтований на швидкість для сучасних веб-проєктів',
+    
+  };
+
+  const softSkillsDescriptionsEn = {
+    'Teamwork': 'Collaborative and effective team player, communication skills',
+    'Adaptability': 'Quickly adapt to new challenges and dynamic environments',
+    'Open-mindedness': 'Willingness to consider diverse perspectives and ideas',
+    'Scrum Basics': 'Fundamental understanding of Scrum framework for agile project management',
+    'Self-management skills': 'Effectively managing one’s time, resources, and responsibilities',
+    'Organization and Planning skills': 'Skillful planning, organizing tasks, and setting priorities',
+  };
+  
+  const softSkillsDescriptionsUa = {
     'Teamwork': 'Співпраця та ефективна робота в команді, комунікативні навички',
     'Adaptability': 'Швидка адаптація до нових викликів і динамічного середовища',
     'Open-mindedness': 'Готовність враховувати різноманітні точки зору та ідеї',
@@ -109,21 +154,42 @@ export const Skills = () => {
     'Organization and Planning skills': 'Вміння планувати, організовувати завдання та ставити пріоритети',
   };
 
+  const [expandedCategories, setExpandedCategories] = useState({
+    tech: true,
+    soft: true,
+    languages: true,
+  });
+
   const [selectedSkill, setSelectedSkill] = useState(null);
 
-  const handleSkillDescription = skill => {
-    if (skill === selectedSkill) return setSelectedSkill(null);
-    setSelectedSkill(skill);
+  const toggleCategory = (category) => {
+    setExpandedCategories((prevState) => ({
+      ...prevState,
+      [category]: !prevState[category],
+    }));
   };
 
-  const getSkillDescription = skill => {
-    if (currentLanguage === 'ua') {
-      return techStackDescriptionsUa[skill] || '';
+  const handleSkillDescription = (skill) => {
+    setSelectedSkill(skill === selectedSkill ? null : skill);
+  };
+
+  const getSkillDescription = (skill, category) => {
+    if (category === 'soft') {
+      if (currentLanguage === 'ua') {
+        return softSkillsDescriptionsUa[skill] || '';
+      }
+      return softSkillsDescriptionsEn[skill] || '';
     }
-    return techStackDescriptionsEn[skill] || '';
+    if (category === 'tech') {
+      if (currentLanguage === 'ua') {
+        return techStackDescriptionsUa[skill] || '';
+      }
+      return techStackDescriptionsEn[skill] || '';
+    }
+    return '';
   };
 
-  const getSoftSkillName = skill => {
+  const getSoftSkillName = (skill) => {
     if (currentLanguage === 'ua') {
       return softSkillsTranslationsUa[skill] || skill;
     }
@@ -133,70 +199,90 @@ export const Skills = () => {
   return (
     <Section>
       <Container>
+        {/* Технические навыки */}
         <SkillsContainer>
-          <h3>{t('tech')}</h3>
-          <SkillsList>
-            {techStack.map((skill, index) => (
-              <>
-              {selectedSkill !== skill ?               <li key={`tech-${index}`} >
-                <p onClick={() => handleSkillDescription(skill)} style={{ display: "flex" }}> 
-                  <p>{skill}</p>
-                  {selectedSkill === skill && (
-                    <span>&nbsp;- {getSkillDescription(skill)}</span>
-                  )}
-                </p>
-              </li> :               
-              <li key={`tech-${index}`} style={{ background: "black", color: "white"}} >
-                <p onClick={() => handleSkillDescription(skill)} style={{ display: "flex" }}> 
-                  <p>{skill}</p>
-                  {selectedSkill === skill && (
-                    <span>&nbsp;- {getSkillDescription(skill)}</span>
-                  )}
-                </p>
-              </li>}</>
-
-            ))}
-          </SkillsList>
-        </SkillsContainer>
-        <SkillsContainer>
-          <h3>{t('soft')}</h3>
-          <SkillsList>
-          {softSkills.map((skill, index) => (
-              <>
-              {selectedSkill !== skill ?               <li key={`soft-${index}`} style={{ listStyle: 'none' }}>
-                <p onClick={() => handleSkillDescription(skill)}  style={{ display: "flex" }}>
-                  <p>{getSoftSkillName(skill)}</p>
-                  {selectedSkill === skill && (
-                    <span>&nbsp; - {getSkillDescription(skill)}</span>
-                  )}
-                </p>
-              </li> :               
-              <li key={`soft-${index}`} style={{ background: "black", color: "white"}} >
-              <p onClick={() => handleSkillDescription(skill)}  style={{ display: "flex" }}>
-                <p>{getSoftSkillName(skill)}</p>
-                {selectedSkill === skill && (
-                  <span>&nbsp; - {getSkillDescription(skill)}</span>
-                )}
-              </p>
-            </li>}</>
-
-            ))}
-          </SkillsList>
-        </SkillsContainer>
-       
-        <SkillsContainer>
-          <h3>{t('languages')}</h3>
-          <SkillsList>
-          { languages && languages.map(skill => (
-              <li key={skill}>
-                <p>
-                  {skill.language} - {skill.level}
-                </p>
-              </li>
-            )) }
-          </SkillsList>
+          <div onClick={() => toggleCategory('tech')} style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', paddingBottom: '6px' }}>
+            <h3>{t('tech')}</h3>
+            {expandedCategories.tech ? <IoIosArrowUp /> : <IoIosArrowDown />}
+          </div>
+          <div
+            style={{
+              maxHeight: expandedCategories.tech ? '1000px' : '0',
+              overflow: 'hidden',
+              transition: 'max-height 0.5s ease',
+            }}
+          >
+            <SkillsList>
+              {techStack.map((skill, index) => (
+                <li
+                  key={`tech-${index}`}
+                  style={selectedSkill === skill ? { background: 'black', color: 'white' } : {}}
+                >
+                  <p onClick={() => handleSkillDescription(skill)}>
+                    {skill} {selectedSkill === skill && ` - ${getSkillDescription(skill, 'tech')}`}
+                  </p>
+                </li>
+              ))}
+            </SkillsList>
+          </div>
         </SkillsContainer>
 
+        {/* Софт-скилы */}
+        <SkillsContainer>
+  <div
+    onClick={() => toggleCategory('soft')}
+    style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', paddingBottom: '6px' }}
+  >
+    <h3>{t('soft')}</h3>
+    {expandedCategories.soft ? <IoIosArrowUp /> : <IoIosArrowDown />}
+  </div>
+  <div
+    style={{
+      maxHeight: expandedCategories.soft ? '1000px' : '0',
+      overflow: 'hidden',
+      transition: 'max-height 0.5s ease',
+    }}
+  >
+    <SkillsList>
+      {softSkills.map((skill, index) => (
+        <li
+          key={`soft-${index}`}
+          style={selectedSkill === skill ? { background: 'black', color: 'white' } : {}}
+        >
+          <p onClick={() => handleSkillDescription(skill)}>
+            {getSoftSkillName(skill)}
+            {selectedSkill === skill && ` - ${getSkillDescription(skill, 'soft')}`}
+          </p>
+        </li>
+      ))}
+    </SkillsList>
+  </div>
+</SkillsContainer>
+
+        {/* Языки */}
+        <SkillsContainer>
+          <div onClick={() => toggleCategory('languages')} style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', paddingBottom: '6px' }}>
+            <h3>{t('languages')}</h3>
+            {expandedCategories.languages ? <IoIosArrowUp /> : <IoIosArrowDown />}
+          </div>
+          <div
+            style={{
+              maxHeight: expandedCategories.languages ? '1000px' : '0',
+              overflow: 'hidden',
+              transition: 'max-height 0.5s ease',
+            }}
+          >
+            <SkillsList>
+              {languages.map((skill, index) => (
+                <li key={`lang-${index}`}>
+                  <p>
+                    {skill.language} - {skill.level}
+                  </p>
+                </li>
+              ))}
+            </SkillsList>
+          </div>
+        </SkillsContainer>
       </Container>
     </Section>
   );

@@ -42,6 +42,7 @@
   "description": "Description",
   "links": "Links",
   "page": "Page",
-  "page-github": "GitHub"
-
+  "page-github": "GitHub",
+  "read-more": "Read more",
+  "collapse": "Collapse"
 }

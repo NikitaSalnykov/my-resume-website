@@ -34,9 +34,6 @@ export const SkillsList = styled.ul`
 
 export const SkillsContainer = styled.div`
       margin-bottom: 14px;
-    & h3 {
-      margin-bottom: 14px;
-    }
 `
 
 // export const SkillsDescription = styled.div`
